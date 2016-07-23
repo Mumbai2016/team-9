@@ -120,13 +120,15 @@
 		</dependency>
 
 
-		<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
-			<version>5.1.30</version> </dependency> -->
-		<dependency>
+		<dependency> <groupId>mysql</groupId> 
+		<artifactId>mysql-connector-java</artifactId> 
+			<version>5.1.30</version> </dependency> 
+			
+		<!-- <dependency>
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<version>9.4.1207.jre7</version>
-		</dependency>
+		</dependency> -->
 
 		<dependency>
 			<groupId>javax.servlet</groupId>

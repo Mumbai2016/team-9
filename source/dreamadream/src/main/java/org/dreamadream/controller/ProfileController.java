@@ -19,7 +19,6 @@ public class ProfileController {
 	private ProfileService profileService;
 	
 	@RequestMapping(value = "/viewprofile", method = RequestMethod.GET)
-
 	public ModelAndView login(HttpServletRequest request) {
 
 		try {
