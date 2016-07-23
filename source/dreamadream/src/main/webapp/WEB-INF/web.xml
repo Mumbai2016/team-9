@@ -1,7 +1,60 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee"  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+   <display-name>Dream A Dream</display-name>
+      <!-- location of log4j config file -->
+<context-param>
+    <param-name>log4jConfigLocation</param-name>
+    <param-value>/WEB-INF/log4j.properties</param-value>
+</context-param>
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+<!-- applies log4j configuration -->
+<!-- <listener>
+    <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class>
+</listener> -->
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>dispatcher</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>/WEB-INF/dispatcher-servlet.xml</param-value>
+    </init-param>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>15</session-timeout>
+  </session-config>
+  
+<error-page>
+        <error-code>405</error-code>
+        <location>/WEB-INF/views/405.jsp</location>
+</error-page>
+<error-page>
+        <error-code>404</error-code>
+        <location>/WEB-INF/views/404.jsp</location>
+</error-page>
+<error-page>
+        <error-code>403</error-code>
+        <location>/WEB-INF/views/403.jsp</location>
+</error-page>
+<error-page>
+        <error-code>500</error-code>
+        <location>/WEB-INF/views/500.jsp</location>
+</error-page>
+<error-page>
+        <error-code>400</error-code>
+        <location>/WEB-INF/views/400.jsp</location>
+</error-page>
+
 </web-app>
