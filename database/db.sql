@@ -4,7 +4,7 @@ CREATE TABLE `dad`.`user_details` (
   `user_id` INT NOT NULL,
   `first_name` VARCHAR(45) NULL,
   `last_name` VARCHAR(45) NULL,
-  `date_of_joining` VARCHAR(45) NULL,
+  `date_of_birth` VARCHAR(45) NULL,
   `gender` VARCHAR(45) NULL,
   `email` VARCHAR(45) NULL,
   `mobile_no` VARCHAR(45) NULL,
