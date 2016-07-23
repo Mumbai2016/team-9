@@ -22,15 +22,19 @@ public class ProfileController {
 	public ModelAndView login(HttpServletRequest request) {
 
 		try {
-			String userId = (String) request.getSession(true).getAttribute("user_id");			
+			//String userId = (String) request.getSession(true).getAttribute("user_id");
+			
 
 			ModelAndView model = null;
 
 			UserDetailsBean userDetailsBean = new UserDetailsBean();
 			
-			userDetailsBean.setUserId(userId);
+			userDetailsBean.setUserId(1);
+			
+			System.out.println("before s3ervice");
 			userDetailsBean = profileService.getProfile(userDetailsBean);
 
+			System.out.println("after service");
 			model.addObject("userDetails", userDetailsBean);
 			
 

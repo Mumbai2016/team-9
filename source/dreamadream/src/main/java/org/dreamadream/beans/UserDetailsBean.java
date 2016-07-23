@@ -9,7 +9,7 @@ import java.util.Date;
 public class UserDetailsBean implements Serializable{
 	
 	
-	private String userId;
+	private int userId;
 	
 	private String firstName;
 
@@ -39,7 +39,7 @@ public class UserDetailsBean implements Serializable{
 
 	private String medium_of_education;
 
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
 
@@ -99,7 +99,7 @@ public class UserDetailsBean implements Serializable{
 		return medium_of_education;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 

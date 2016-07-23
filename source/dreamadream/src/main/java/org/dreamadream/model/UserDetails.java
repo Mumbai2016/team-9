@@ -19,7 +19,7 @@ public class UserDetails implements Serializable{
 	
 	@Id
 	@Column(name = "user_id" )
-	private String userId;
+	private int userId;
 	
 	@Column(name = "first_name" )
 	private String firstName;
@@ -64,7 +64,7 @@ public class UserDetails implements Serializable{
 	@Column(name = "medium_of_education" )
 	private String medium_of_education;
 
-	public String getUserId() {
+	public int getUserId() {
 		return userId;
 	}
 
@@ -124,7 +124,7 @@ public class UserDetails implements Serializable{
 		return medium_of_education;
 	}
 
-	public void setUserId(String userId) {
+	public void setUserId(int userId) {
 		this.userId = userId;
 	}
 
