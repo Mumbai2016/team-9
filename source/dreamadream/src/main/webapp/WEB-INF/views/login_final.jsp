@@ -31,7 +31,7 @@
   <div class="card">
     <h1 class="title">Login</h1>
     
-    <form action = "/logged" method = "post">
+    <form action = "logged" method = "post">
       <div class="input-container">
         <input type="text" id="Username" required="required"/>
         <label for="Username">Username</label>
