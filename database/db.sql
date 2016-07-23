@@ -1,5 +1,34 @@
 CREATE SCHEMA `dad` ;
 
+/*
+UserDetails{
+
+  userId
+  firstName
+  lastName
+  dateOfBirth
+  gender
+  email
+  mobileNo
+  fatherMobile
+  motherMobile
+  currentStatus
+  currentSevel
+  currentLocation
+  centre
+  schoolOrCollege
+  mediumOfEducation
+  
+}
+
+
+ProfilePic{
+	userId
+	pictureUrl
+}
+*/
+
+
 CREATE TABLE `dad`.`user_details` (
   `user_id` INT NOT NULL,
   `first_name` VARCHAR(45) NULL,
