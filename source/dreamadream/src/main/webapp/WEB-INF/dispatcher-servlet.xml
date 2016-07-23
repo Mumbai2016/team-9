@@ -86,17 +86,13 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 
 	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />	
-		<property name="packagesToScan" value="org.crce.interns.model" />
+		<property name="packagesToScan" value="org.dreamadream" />
 		
-	<!--<property name="annotatedClasses">
-			<list>
-				<value>org.crce.interns.model.Profile</value>
-				<value>org.crce.interns.model.UserDetails</value>
-				<value>org.crce.interns.model.PersonalProfile</value>
-				<value>org.crce.interns.model.ProfessionalProfile</value>
-				<value>org.crce.interns.model.Qualification</value>
+	<property name="annotatedClasses">
+			<list>				
+				<value>org.dreamadream.model.UserDetails</value>				
 			</list>
-		</property> -->
+		</property>
 		
 		<property name="hibernateProperties">
 			<props>

@@ -16,9 +16,9 @@ public class ProfileDaoImpl implements ProfileDao{
 	
 	public UserDetails getProfile(UserDetails user) {
 		
+		System.out.println(user.getUserId());
 		UserDetails result = (UserDetails)sessionFactory.getCurrentSession().get(UserDetails.class, user.getUserId());
-		System.out.println(result.getFirstName());
-		
+		System.out.println(result.getFirstName());		
 		return result;
 	}
 }

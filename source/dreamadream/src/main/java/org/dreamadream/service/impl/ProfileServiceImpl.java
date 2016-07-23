@@ -12,23 +12,22 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service("profileService")
 @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)
-public class ProfileServiceImpl implements ProfileService {
+public class ProfileServiceImpl implements ProfileService{
 
 	@Autowired
 	private ProfileDao profileDAO;
 	
-	//@Override
 	@Transactional(propagation = Propagation.REQUIRED, readOnly = false)
 	public UserDetailsBean getProfile(UserDetailsBean userDetailsBean) {
 		//Profile result = profileDAOImpl.getProfile(user);
 		
-			
+			System.out.println("in service before dao");
 			UserDetails userDetails=new UserDetails();
 			userDetails.setUserId(userDetailsBean.getUserId());
 			
 			
 			UserDetails result = profileDAO.getProfile(userDetails);
-			
+			System.out.println("in service after dao");
 			
 			if(result == null){
 				System.out.println("Returned NULL");
