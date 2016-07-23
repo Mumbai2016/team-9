@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "level")
+@Table(name = "program_level")
 public class Level {
 
 	@Id
