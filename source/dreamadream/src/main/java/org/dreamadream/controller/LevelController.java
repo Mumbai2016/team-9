@@ -7,13 +7,14 @@ import org.dreamadream.model.Level;
 import org.dreamadream.service.impl.LevelService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.gson.Gson;
 
-
+@Controller
 public class LevelController {
 	
 
@@ -75,10 +76,35 @@ public class LevelController {
 		result.add(r3);
 		result.add(r4);
 		
+		System.out.println(result.toString());
 		return new Gson().toJson(result);
 		
 		
 	}
+	
+	/*@RequestMapping(value = "/graduate-enrolment", method = RequestMethod.GET
+			,produces=MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody String getGraduateEnrolment(){
+		
+		
+		List<Integer> less_than_3 = new ArrayList<Integer>();
+		less_than_3.add(382);
+		less_than_3.add(386);
+		less_than_3.add(287);
+		less_than_3.add(443);
+		
+		List<Integer> inactive = new ArrayList<Integer>();
+		inactive.add(130);
+		inactive.add(130);
+		
+		
+		System.out.println(result.toString());
+		return new Gson().toJson(result);
+		
+		
+	}*/
+	
+	
 	
 	
 }
