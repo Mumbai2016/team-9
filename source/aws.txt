@@ -1,0 +1,12 @@
+Hi,
+
+Below are the details of Amazon EC2 server for Team #9
+
+Username: force
+Hostname: ec2-54-169-233-60.ap-southeast-1.compute.amazonaws.com
+
+You need to use the attached pem file to SSH into the server.
+
+if you are using windows laptops, you need to convert pem file to .ppk file using puttygen and then connect to remote server using the generated.ppk file. refer to http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html for more information.
+
+Thanks
