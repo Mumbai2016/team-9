@@ -122,11 +122,11 @@ public class LevelController {
 		List<String> chart3 = new ArrayList<String>();
 		List<String> chart4 = new ArrayList<String>();
 		
-		chart1.add("");
-		chart1.add("");
-		chart1.add("");
-		chart1.add("");
-		chart1.add("");
+		chart1.add("2012");
+		chart1.add("2013");
+		chart1.add("2014");
+		chart1.add("2015");
+		chart1.add("2016");
 		
 		chart2.add("");
 		chart2.add("");

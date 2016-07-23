@@ -1,5 +1,9 @@
 
 $(function () {
+	
+	
+	
+	
     $('#container').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -34,9 +38,7 @@ $(function () {
                 y: 56.33
             }, {
                 name: 'Chrome',
-                y: 24.03,
-                sliced: true,
-                selected: true
+                y: 24.03,               
             }, {
                 name: 'Firefox',
                 y: 10.38
