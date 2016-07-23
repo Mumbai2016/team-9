@@ -81,11 +81,11 @@ public class LoginController {
 	public ModelAndView login(HttpServletRequest request, HttpServletResponse response) {
 			
 		
-			return new ModelAndView("login");
+			return new ModelAndView("login_final");
 	}
 	
 	@RequestMapping(
-			value = "/login-submit", 
+			value = "/logged", 
 			method = RequestMethod.POST)
 	public ModelAndView loginSubmit(
 			HttpServletRequest request, HttpServletResponse response,
@@ -96,10 +96,10 @@ public class LoginController {
 		if(r.get("username").equals("student")
 				&& r.get("password").equals("123")){
 			
-			view = new ModelAndView("student");
+			view = new ModelAndView("p1");
 		}
-		else if(r.get("username").equals("student")
-				&& r.get("password").equals("123")){
+		else if(r.get("username").equals("admin")
+				&& r.get("password").equals("456")){
 			view = new ModelAndView("admin");
 		}
 		
