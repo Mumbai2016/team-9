@@ -51,6 +51,7 @@ public class ProfileController {
 		catch (Exception e) {
 			//System.out.println(e);                       
 			ModelAndView model = new ModelAndView("500");
+			System.out.println(e.getMessage());
 			model.addObject("message", "Your session has timed out. Please login again");
 			model.addObject("url", "form");
 

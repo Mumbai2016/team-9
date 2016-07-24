@@ -31,7 +31,7 @@ public class UserDetails implements Serializable{
 	private String dob;
 	
 	@Column(name = "gender" )
-	private Date gender;
+	private String gender;
 	
 	@Column(name = "email" )
 	private String email;
@@ -41,7 +41,7 @@ public class UserDetails implements Serializable{
 	private String mobile;
 	
 	@Column(name = "father_mobile" )
-	private Date fatherMobile;
+	private String fatherMobile;
 	
 	@Column(name = "mother_mobile" )
 	private String motherMobile;
@@ -80,7 +80,7 @@ public class UserDetails implements Serializable{
 		return dob;
 	}
 
-	public Date getGender() {
+	public String getGender() {
 		return gender;
 	}
 
@@ -92,7 +92,7 @@ public class UserDetails implements Serializable{
 		return mobile;
 	}
 
-	public Date getFatherMobile() {
+	public String getFatherMobile() {
 		return fatherMobile;
 	}
 
@@ -140,7 +140,7 @@ public class UserDetails implements Serializable{
 		this.dob = dob;
 	}
 
-	public void setGender(Date gender) {
+	public void setGender(String gender) {
 		this.gender = gender;
 	}
 
@@ -152,7 +152,7 @@ public class UserDetails implements Serializable{
 		this.mobile = mobile;
 	}
 
-	public void setFatherMobile(Date fatherMobile) {
+	public void setFatherMobile(String fatherMobile) {
 		this.fatherMobile = fatherMobile;
 	}
 
