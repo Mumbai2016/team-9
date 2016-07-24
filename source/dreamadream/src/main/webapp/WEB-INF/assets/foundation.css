@@ -406,8 +406,8 @@ footer {
 #container {background: #ADD8E6;}
 #container .wrap-container{}
 #main-content {background-color: #FFFFFF;}
-#main-content .wrap-content{padding: 0px 20px;}
-.contact {background:#ADD8E6;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
+#main-content .wrap-content{padding: 0px ;}
+.contact {background:#FFFFFF;-webkit-border-radius: 8px;-moz-border-radius: 8px;border-radius: 8px;}
 .contact h2{font-size: 34px; font-weight: 500;letter-spacing: 3px;padding-top: 70px ;text-align: center;}
 
 #contact_form {padding:25px;}
