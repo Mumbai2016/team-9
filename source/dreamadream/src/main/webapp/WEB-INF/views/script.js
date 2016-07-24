@@ -40,8 +40,7 @@ $(function() {
          }]
       });
    });
-872 characters / 41 lines
-Advertising from Carbon:
+
 
 
 
