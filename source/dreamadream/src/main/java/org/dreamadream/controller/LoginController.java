@@ -96,7 +96,7 @@ public class LoginController {
 		if(r.get("username").equals("student")
 				&& r.get("password").equals("123")){
 			
-			view = new ModelAndView("p1");
+			view = new ModelAndView("redirect:viewporfile");
 		}
 		else if(r.get("username").equals("admin")
 				&& r.get("password").equals("456")){
