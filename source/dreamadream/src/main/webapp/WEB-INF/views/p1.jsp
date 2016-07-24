@@ -3,7 +3,7 @@
 <head>
 <title>Profile Page</title>
 <meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/style.css" />
+<link type="text/css" rel="stylesheet" href="/dreamadream/resources/assets/styles/style.css" />
 <!--[if IE 6]><link rel="stylesheet" href="styles/ie6.css" /><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
 </head>
@@ -15,17 +15,17 @@
   </div>
   <div id="bio">
     <div id="about">
-      <div id="photo-bg"> <img src="man.jpg" alt="" width="180" height="180" /> </div>
-      <h3>Nevil Dsouza</h3>
-      <p>Lives in Mumbai<br>Interested in dance</p>
-      <h4>Status: <span>Just passed out SSC</span></h4>
+      <div id="photo-bg"> <img src="images/man.jpg" alt="" width="180" height="180" /> </div>
+      <h3>${u.firstName} ${u.lastName} </h3>
+      <p>Lives in ${u.currentLocation}<br>
+      <h4>Status: <span>${u.currentStatus}</span></h4>
     </div>
     <div id="contact-details">
       <h3>Contact Me</h3>
       <!--<p>If you're interested in getting me to do some freelance/contract work for you please get in touch:</p>-->
-      <h5>Phone: <span>01234 567 890</span></h5>
-      <h5>Email: <span>abcd@email.com</span></h5>
-      <h5>Facebook: <span>@facebook</span></h5>
+      <h5>Phone: <span>${u.mobile}</span></h5>
+      <h5>Email: <span>${u.email}</span></h5>
+     
     </div>
   </div>
   <div class="line"></div>
@@ -36,9 +36,9 @@
     <!--<div class="project last"> <a href="#"><img src="images/soko440x240.jpg" alt="" /></a> </div>-->
 <div id="featured-projects">	  
 	  <h3>About</h3>
-    <div class="project"> <a href="#"><<!--img src="images/sanda440x240.jpg" alt="" /> --></a>
-	<p>This person has joined since 12-3-1989<br>
-Belongs to level LSD<br>
+    <div class="project"> <a href="#"><<!--img src="images/sanda440x240.jpg" alt="" />--></a>
+	<p>This person has joined since ${u.userId}<br>
+Belongs to level ${u.userId}<br>
 
 	</p>
 	</div>
@@ -85,4 +85,4 @@ Belongs to level LSD<br>
   </div>
 </div>
 <!--<div align=center>This template  downloaded form <a href='http://all-free-download.com/free-website-templates/'>free website templates</a></div></body>-->
-</html>
+</html>>

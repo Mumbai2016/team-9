@@ -2,24 +2,8 @@
 $(function () {
 	
 	//jquery call
-	var a1;
-	var a2;
-	var a3;
-	var a4;
 	
-	$.ajax({
-			url: 'get-charts-tests' ,
-			
-			dataType : 'json',
-			success : function(data){
-				ar1 = data['c1'];
-				ar2 = data['c2'];
-				ar3 = data['c3'];
-				ar4 = data['c4'];
-
-			}
-	});
-		
+	
     $('#container').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -51,23 +35,23 @@ $(function () {
             colorByPoint: true,
             
 			data: [{
-                name: c1[0],
-                y: c1[1]
+                name: "",
+                y: ""
             }, {
-                name: c1[2],
-                y: c1[3],               
+                name: "",
+                y: "",               
             }, {
-                name: c1[4],
-                y: c1[5]
+                name: "",
+                y: ""
             }, {
-                name: c1[6],
-                y: c1[7]
+                name: "",
+                y: ""
             }, {
-                name: c1[8],
-                y: c1[9]
+                name: "",
+                y: ""
             }, {
-                name: c1[10],
-                y: c1[11]
+                name: "",
+                y: ""
             }] 
 			
 			

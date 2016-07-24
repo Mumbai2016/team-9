@@ -17,13 +17,13 @@ public class UserDetailsBean implements Serializable{
 
 	private String dob;
 
-	private Date gender;
+	private String gender;
 
 	private String email;
 
 	private String mobile;
 
-	private Date fatherMobile;
+	private String fatherMobile;
 
 	private String motherMobile;
 
@@ -55,7 +55,7 @@ public class UserDetailsBean implements Serializable{
 		return dob;
 	}
 
-	public Date getGender() {
+	public String getGender() {
 		return gender;
 	}
 
@@ -67,7 +67,7 @@ public class UserDetailsBean implements Serializable{
 		return mobile;
 	}
 
-	public Date getFatherMobile() {
+	public String getFatherMobile() {
 		return fatherMobile;
 	}
 
@@ -115,7 +115,7 @@ public class UserDetailsBean implements Serializable{
 		this.dob = dob;
 	}
 
-	public void setGender(Date gender) {
+	public void setGender(String gender) {
 		this.gender = gender;
 	}
 
@@ -127,7 +127,7 @@ public class UserDetailsBean implements Serializable{
 		this.mobile = mobile;
 	}
 
-	public void setFatherMobile(Date fatherMobile) {
+	public void setFatherMobile(String fatherMobile) {
 		this.fatherMobile = fatherMobile;
 	}
 

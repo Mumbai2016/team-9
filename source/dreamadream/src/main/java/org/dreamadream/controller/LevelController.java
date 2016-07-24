@@ -197,7 +197,7 @@ public class LevelController {
 		
 	}
 	
-	@RequestMapping(value = "/get-chart1", method = RequestMethod.GET)
+/*	@RequestMapping(value = "/get-chart1", method = RequestMethod.GET)
 	public void getChart1(){
 	
 		//System.out.println(levelService.getLevel("102"));
@@ -258,7 +258,7 @@ public class LevelController {
 		
 		System.out.println(result.toString());
 		return new Gson().toJson(result);
-		*/
+		
 		
 		return ;
 	}
