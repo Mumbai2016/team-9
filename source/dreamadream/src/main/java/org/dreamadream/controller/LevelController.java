@@ -103,8 +103,63 @@ public class LevelController {
 		
 		
 	}*/
+	 
+	/*
+	for chart related api
 	
 	
+	*/
 	
+/*	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
+			,produces=MediaType.APPLICATION_JSON_VALUE)
+	public @ResponseBody String getChartTest(){
+	
+		//System.out.println(levelService.getLevel("102"));
+		
+		
+		List<String> chart1 = new ArrayList<String>();
+		List<String> chart2 = new ArrayList<String>();
+		List<String> chart3 = new ArrayList<String>();
+		List<String> chart4 = new ArrayList<String>();
+		List<String> chart5 = new ArrayList<String>();
+		
+		chart1.add("2012");
+		chart1.add("2013");
+		chart1.add("2014");
+		chart1.add("2015");
+		chart1.add("2016");
+		
+		chart2.add("");
+		chart2.add("");
+		chart2.add("");
+		chart2.add("");
+		chart2.add("");
+		
+		
+		chart3.add("");
+		chart3.add("");
+		chart3.add("");
+		chart3.add("");
+		chart3.add("");
+		
+		chart4.add("");
+		chart4.add("");
+		chart4.add("");
+		chart4.add("");
+		chart4.add("");
+		
+		chart5.add("");
+		chart5.add("");
+		chart5.add("");
+		chart5.add("");
+		chart5.add("");
+		
+		
+		
+		System.out.println(result.toString());
+		return new Gson().toJson(result);
+		
+		
+	}*/
 	
 }

@@ -1,9 +1,5 @@
 
 $(function () {
-	
-	
-	
-	
     $('#container').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -38,7 +34,9 @@ $(function () {
                 y: 56.33
             }, {
                 name: 'Chrome',
-                y: 24.03,               
+                y: 24.03,
+                sliced: true,
+                selected: true
             }, {
                 name: 'Firefox',
                 y: 10.38
@@ -56,24 +54,6 @@ $(function () {
     });
 });
 
-/*
-var chart1; // globally available
-$(function() {
-      chart1 = new Highcharts.StockChart({
-         chart: {
-            renderTo: 'container'
-         },
-         rangeSelector: {
-            selected: 1
-         },
-         series: [{
-            name: 'USD to EUR',
-            data: usdtoeur // predefined JavaScript array
-         }]
-      });
-   });
-
-*/
 $(function () {
     $('#container1').highcharts({
         chart: {
@@ -156,7 +136,6 @@ $(function () {
             title: {
                 text: 'Total percent market share'
             }
-
 
         },
         legend: {
@@ -390,5 +369,43 @@ $(function () {
                 ]
             }]
         }
+    });
+});
+
+$(function () {
+    $('#container3').highcharts({
+        chart: {
+            type: 'bar'
+        },
+        title: {
+            text: 'Tracking Status, Career Connect				'
+        },
+        xAxis: {
+            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total fruit consumption'
+            }
+        },
+        legend: {
+            reversed: true
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+        series: [{
+            name: 'John',
+            data: [5, 3, 4, 7, 2]
+        }, {
+            name: 'Jane',
+            data: [2, 2, 3, 2, 1]
+        }, {
+            name: 'Joe',
+            data: [3, 4, 4, 2, 5]
+        }]
     });
 });
