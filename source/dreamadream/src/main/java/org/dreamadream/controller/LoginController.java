@@ -100,7 +100,7 @@ public class LoginController {
 		}
 		else if(r.get("username").equals("admin")
 				&& r.get("password").equals("456")){
-			view = new ModelAndView("admin");
+			view = new ModelAndView("dashboard");
 		}
 		
 		return view;

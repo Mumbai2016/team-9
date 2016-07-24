@@ -3,7 +3,7 @@
 <head>
 <title>Profile Page</title>
 <meta charset="utf-8">
-<link type="text/css" rel="stylesheet" href="styles/style.css" />
+<link type="text/css" rel="stylesheet" href="/dreamadream/resources/assets/styles/style.css" />
 <!--[if IE 6]><link rel="stylesheet" href="styles/ie6.css" /><![endif]-->
 <!--[if IE 7]><link rel="stylesheet" href="styles/ie7.css" /><![endif]-->
 </head>
