@@ -110,7 +110,7 @@ public class LevelController {
 	
 	*/
 	
-/*	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
+	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
 			,produces=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody String getChartTest(){
 	
@@ -144,15 +144,15 @@ public class LevelController {
 		chart1.add("290");	
 		
 		
-		chart3.add("ABCD");
+		chart3.add("Number of drop outs in the first quarter");
 		chart3.add("23");
-		chart3.add("OPED");
-		chart3.add("	13");
-		chart3.add("ASD");
+		chart3.add("Number of young people meaningfully engaged since last quarter");
+		chart3.add("13");
+		chart3.add("Number of young people receiving LMS program among drop outs");
 		chart3.add("19");
-		chart3.add("ASD");
+		chart3.add("No of young people who continue to be drop outs even in this quarter");
 		chart3.add("43");
-		chart3.add("ASD");
+		chart3.add("Number of unique new drop outs added in this quarter");
 		chart3.add("10");
 		chart3.add("20");
 		chart3.add("13");
@@ -162,13 +162,13 @@ public class LevelController {
 		chart4.add("");
 		chart4.add("");
 		chart4.add("");
-		/*
+		
 		chart5.add("");
 		chart5.add("");
 		chart5.add("");
 		chart5.add("");
 		chart5.add("");
-		*/
+		
 		
 		
 		//System.out.println(result.toString());
