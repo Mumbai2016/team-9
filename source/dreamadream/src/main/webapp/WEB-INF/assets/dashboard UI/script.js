@@ -42,28 +42,36 @@ $(function () {
             }
         },
         series: [{
-            name: 'Brands',
+            name: 'Yearwise Allotment',
             colorByPoint: true,
             data: [{
+
+                name: '2012-13',
+                y: 70
+            }, {
+                name: '2013-14',
+                y: 682,
+
                 name: a1[0],
                 y: a1[1]
             }, {
                 name: a1[2],
                 y: a1[3],
+
                 sliced: true,
                 selected: true
             }, {
-                name: 'Firefox',
-                y: 10.38
+                name: '2014-15',
+                y: 1168
             }, {
-                name: 'Safari',
-                y: 4.77
+                name: '2015-16',
+                y: 382
             }, {
-                name: 'Opera',
-                y: 0.91
+                name: '2016-17',
+                y: 364
             }, {
-                name: 'Proprietary or Undetectable',
-                y: 0.2
+                name: '2017-18',
+                y: 338
             }]
         }]
     });
@@ -75,13 +83,13 @@ $(function () {
             type: 'bar'
         },
         title: {
-            text: 'Age-wise break up'
+            text: 'Age-wise Break Up'
         },
         subtitle: {
-            text: 'Source: <a href="https://en.wikipedia.org/wiki/World_population"></a>'
+            text: ''
         },
         xAxis: {
-            categories: ['Africa', 'America', 'Asia', 'Europe', 'Oceania'],
+            categories: ['Age 12-13', 'Age 14-15', 'Age 16-17', 'Age 18+'],
             title: {
                 text: null
             }
@@ -89,7 +97,7 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Population (millions)',
+                text: 'Count of Persons Enrolled',
                 align: 'high'
             },
             labels: {
@@ -97,7 +105,7 @@ $(function () {
             }
         },
         tooltip: {
-            valueSuffix: ' millions'
+            valueSuffix: ''
         },
         plotOptions: {
             bar: {
@@ -121,14 +129,14 @@ $(function () {
             enabled: false
         },
         series: [{
-            name: 'Year 1800',
-            data: [107, 31, 635, 203, 2]
+            name: 'Male',
+            data: [2,84,630,838]
         }, {
-            name: 'Year 1900',
-            data: [133, 156, 947, 408, 6]
+            name: 'Female',
+            data: [3,95,695,916]
         }, {
-            name: 'Year 2012',
-            data: [1052, 954, 4250, 740, 38]
+            name: 'Total',
+            data: [5,179,1325,1754]
         }]
     });
 });
@@ -142,14 +150,14 @@ $(function () {
             text: 'Drop Out - Tracked status - Career Connect											'
         },
         subtitle: {
-            text: 'Click the columns to view versions. Source: <a href="http://netmarketshare.com">netmarketshare.com</a>.'
+            text: ''
         },
         xAxis: {
             type: 'category'
         },
         yAxis: {
             title: {
-                text: 'Total percent market share'
+                text: 'No of Students'
             }
 
         },
@@ -172,32 +180,32 @@ $(function () {
         },
 
         series: [{
-            name: 'Brands',
+            name: 'No of Students',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
-                y: 56.33,
-                drilldown: 'Microsoft Internet Explorer'
+                name: 'Dropouts- Last Quarter',
+                y: 121,
+                drilldown: 'Dropouts- Last Quarter'
             }, {
-                name: 'Chrome',
-                y: 24.03,
-                drilldown: 'Chrome'
+                name: 'Meaningfully Engaged- Last Quarter',
+                y: 33,
+                drilldown: 'Meaningfully Engaged- Last Quarter'
             }, {
-                name: 'Firefox',
-                y: 10.38,
-                drilldown: 'Firefox'
+                name: 'LMS among Dropouts',
+                y: 5,
+                drilldown: 'LMS among Dropouts'
             }, {
-                name: 'Safari',
-                y: 4.77,
-                drilldown: 'Safari'
+                name: 'Continued Dropouts',
+                y: 72,
+                drilldown: 'Continued Dropouts'
             }, {
-                name: 'Opera',
-                y: 0.91,
-                drilldown: 'Opera'
+                name: 'Not Reachable from Last Quarter',
+                y: 16,
+                drilldown: 'Not Reachable from Last Quarter'
             }, {
-                name: 'Proprietary or Undetectable',
-                y: 0.2,
-                drilldown: null
+                name: 'New Dropouts Added',
+                y: 13,
+                drilldown: 'New Dropouts Added'
             }]
         }],
         drilldown: {
@@ -396,35 +404,35 @@ $(function () {
             text: 'Tracking Status, Career Connect				'
         },
         subtitle: {
-            text: 'Source: WorldClimate.com'
+            text: ''
         },
         xAxis: {
             categories: [
-                'Jan',
-                'Feb',
-                'Mar',
-                'Apr',
-                'May',
-                'Jun',
-                'Jul',
-                'Aug',
-                'Sep',
-                'Oct',
-                'Nov',
-                'Dec'
+                'Less than 3 months',
+                'Inactive',
+                'Secondary/School',
+                'Sr Secondary/PUC',
+                'Diploma',
+                'Graduation/ Degree',
+                'Employed',
+                'Vocation Training',
+                'Student and Employed',
+                'Dropout',
+                'Married',
+                'Not Reachable'
             ],
             crosshair: true
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Rainfall (mm)'
+                text: 'No of Students'
             }
         },
         tooltip: {
             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
             footerFormat: '</table>',
             shared: true,
             useHTML: true
@@ -436,20 +444,68 @@ $(function () {
             }
         },
         series: [{
-            name: 'Tokyo',
-            data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+            name: 'Q1',
+            data: [382,
+130,
+23,
+874,
+49,
+416,
+15,
+1,
+0,
+30,
+5,
+377
+]
 
         }, {
-            name: 'New York',
-            data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+            name: 'Q2',
+            data: [386,
+132,
+124,
+650,
+53,
+515,
+110,
+5,
+9,
+74,
+17,
+591,
+]
 
         }, {
-            name: 'London',
-            data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+            name: 'Q3',
+            data: [287,
+132,
+50,
+790,
+49,
+617,
+156,
+8,
+4,
+121,
+26,
+685,
+]
 
         }, {
-            name: 'Berlin',
-            data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+            name: 'Q4',
+            data: [443,
+237,
+80,
+1011,
+67,
+725,
+206,
+6,
+2,
+78,
+37,
+371,
+]
 
         }]
     });
