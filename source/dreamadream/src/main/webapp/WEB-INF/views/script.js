@@ -1,9 +1,25 @@
 
 $(function () {
 	
+	//jquery call
+	var a1;
+	var a2;
+	var a3;
+	var a4;
 	
-	
-	
+	$.ajax({
+			url: 'get-charts-tests' ,
+			
+			dataType : 'json',
+			success : function(data){
+				ar1 = data['c1'];
+				ar2 = data['c2'];
+				ar3 = data['c3'];
+				ar4 = data['c4'];
+
+			}
+	});
+		
     $('#container').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -33,25 +49,29 @@ $(function () {
         series: [{
             name: 'Brands',
             colorByPoint: true,
-            data: [{
-                name: 'Microsoft Internet Explorer',
-                y: 56.33
+            
+			data: [{
+                name: c1[0],
+                y: c1[1]
             }, {
-                name: 'Chrome',
-                y: 24.03,               
+                name: c1[2],
+                y: c1[3],               
             }, {
-                name: 'Firefox',
-                y: 10.38
+                name: c1[4],
+                y: c1[5]
             }, {
-                name: 'Safari',
-                y: 4.77
+                name: c1[6],
+                y: c1[7]
             }, {
-                name: 'Opera',
-                y: 0.91
+                name: c1[8],
+                y: c1[9]
             }, {
-                name: 'Proprietary or Undetectable',
-                y: 0.2
-            }]
+                name: c1[10],
+                y: c1[11]
+            }] 
+			
+			
+			
         }]
     });
 });
