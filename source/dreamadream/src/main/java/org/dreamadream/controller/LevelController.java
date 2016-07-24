@@ -110,7 +110,7 @@ public class LevelController {
 	
 	*/
 	
-	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
+	/*@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
 			,produces=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody String getChartTest(){
 	
@@ -243,7 +243,7 @@ public class LevelController {
 		return "";
 		
 	}
-	
+	*/
 		
 		
 	
