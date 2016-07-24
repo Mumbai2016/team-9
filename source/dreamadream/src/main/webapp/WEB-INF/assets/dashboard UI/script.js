@@ -1,5 +1,20 @@
 
 $(function () {
+    var a1;
+    var a2;
+    var a3;
+    var a4;
+    
+    $.ajax({
+			url: 'get-charts-test' ,
+			
+			dataType : 'json',
+			success : function(data){
+                a1 = data['c1'];
+                
+			}
+    });	
+    
     $('#container').highcharts({
         chart: {
             plotBackgroundColor: null,
@@ -30,11 +45,11 @@ $(function () {
             name: 'Brands',
             colorByPoint: true,
             data: [{
-                name: 'Microsoft Internet Explorer',
-                y: 56.33
+                name: a1[0],
+                y: a1[1]
             }, {
-                name: 'Chrome',
-                y: 24.03,
+                name: a1[2],
+                y: a1[3],
                 sliced: true,
                 selected: true
             }, {
