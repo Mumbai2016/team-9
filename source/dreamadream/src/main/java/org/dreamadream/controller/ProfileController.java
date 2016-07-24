@@ -37,7 +37,8 @@ public class ProfileController {
 			System.out.println("after service");
 			model.addObject("userDetails", userDetailsBean);
 			
-
+			System.out.println(userDetailsBean.getCentre());
+			
 			return model;
 		}
 		// }
@@ -51,4 +52,34 @@ public class ProfileController {
 		}
 		
 	}
+	
+	
+	
+	@RequestMapping(value = "/search", method = RequestMethod.GET)
+	public ModelAndView search() {
+
+		try {
+			//String userId = (String) request.getSession(true).getAttribute("user_id");
+			
+
+			ModelAndView model = null;
+
+			
+			
+			model = new ModelAndView("index");
+			
+			return model;
+		}
+		// }
+		catch (Exception e) {
+			//System.out.println(e);                       
+			ModelAndView model = new ModelAndView("500");
+			model.addObject("message", "Your session has timed out. Please login again");
+			model.addObject("url", "form");
+
+			return model;
+		}
+		
+	}
+
 }

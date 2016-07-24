@@ -1,6 +1,6 @@
 
 $(function () {
-	
+	alert("Hey why not working?");
 	//jquery call
 	var a1;
 	var a2;
