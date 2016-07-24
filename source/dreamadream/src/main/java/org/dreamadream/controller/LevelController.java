@@ -1,7 +1,9 @@
 package org.dreamadream.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.dreamadream.model.Level;
 import org.dreamadream.service.impl.LevelService;
@@ -110,9 +112,9 @@ public class LevelController {
 	
 	*/
 	
-	/*@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
-			,produces=MediaType.APPLICATION_JSON_VALUE)
-	public @ResponseBody String getChartTest(){
+
+	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET)		
+	public @ResponseBody String getCharts(){
 	
 		//System.out.println(levelService.getLevel("102"));
 		
@@ -156,30 +158,47 @@ public class LevelController {
 		chart3.add("10");
 	
 		
-		chart4.add("");
-		chart4.add("");
-		chart4.add("");
-		chart4.add("");
-		chart4.add("");
+		chart4.add("20");
+		chart4.add("24");
+		chart4.add("32");
+		chart4.add("21");
+		chart4.add("34");
 		
-		chart4.add("");
-		chart4.add("");
-		chart4.add("");
-		chart4.add("");
-		chart4.add("");
+		chart4.add("45");
+		chart4.add("23");
+		chart4.add("14");
+		chart4.add("45");
+		chart4.add("30");
+		
+		chart4.add("25");
+		chart4.add("29");
+		chart4.add("34");
+		chart4.add("44");
+		chart4.add("32");
 		
 		
+		chart4.add("42");
+		chart4.add("23");
+		chart4.add("14");
+		chart4.add("41");
+		chart4.add("39");
+		
+		
+		Map<String,List<String>> result = new HashMap<String,List<String>>();
+		result.put("c1", chart1);
+		result.put("c2", chart2);
+		result.put("c3", chart3);
+		result.put("c4", chart4);
 		
 		//System.out.println(result.toString());
 		//return new Gson().toJson(result);
 		
-		return "";
+		return new Gson().toJson(result);
 		
 	}
 	
-	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
-			,produces=MediaType.APPLICATION_JSON_VALUE)
-	public @ResponseBody String getChartTest(){
+	@RequestMapping(value = "/get-chart1", method = RequestMethod.GET)
+	public void getChart1(){
 	
 		//System.out.println(levelService.getLevel("102"));
 		
@@ -235,13 +254,13 @@ public class LevelController {
 		chart4.add("");
 		chart4.add("");
 		
+		/*
 		
+		System.out.println(result.toString());
+		return new Gson().toJson(result);
+		*/
 		
-		//System.out.println(result.toString());
-		//return new Gson().toJson(result);
-		
-		return "";
-		
+		return ;
 	}
 	*/
 		
