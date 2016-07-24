@@ -19,9 +19,11 @@ http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 	<context:annotation-config />
 	<mvc:annotation-driven />
 
-	<!-- <mvc:resources location="views/" mapping="/views/**" />
-	
-	<mvc:resources location="/WEB-INF/assets/" mapping="/assets/**" />  -->
+<!-- 	  <mvc:resources mapping="/theme/**" location="/theme/css/"  />
+ -->	
+	<!-- <mvc:resources location="/assets/" mapping="/assets/**" />  -->  
+	<mvc:resources mapping="/resources/**" location="/resources/"/>
+
 
  
 

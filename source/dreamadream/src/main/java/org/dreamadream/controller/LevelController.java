@@ -110,7 +110,7 @@ public class LevelController {
 	
 	*/
 	
-	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
+/*	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET
 			,produces=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody String getChartTest(){
 	
@@ -121,6 +121,7 @@ public class LevelController {
 		List<String> chart2 = new ArrayList<String>();
 		List<String> chart3 = new ArrayList<String>();
 		List<String> chart4 = new ArrayList<String>();
+		List<String> chart5 = new ArrayList<String>();
 		
 		chart1.add("2012-2013");
 		chart1.add("70");
@@ -175,6 +176,6 @@ public class LevelController {
 		
 		return "";
 		
-	}
+	}*/
 	
 }
