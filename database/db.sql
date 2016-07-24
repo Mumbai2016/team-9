@@ -75,3 +75,15 @@ CREATE TABLE `dad`.`user_status` (
     REFERENCES `dad`.`user_details` (`user_id`)
     ON DELETE CASCADE
     ON UPDATE CASCADE);
+
+	
+	
+	
+	
+INSERT INTO `dad`
+
+
+
+
+
+ 	
