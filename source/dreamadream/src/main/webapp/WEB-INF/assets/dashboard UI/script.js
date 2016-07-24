@@ -454,3 +454,35 @@ $(function () {
         }]
     });
 });
+$(function () {
+    $('#container4').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'Career growth graph'
+        },
+        subtitle: {
+            text: 'Source: Database'
+        },
+        xAxis: {
+            categories: ['Less than 3 months','Secondary/School','Senior Secondary/PUC','Graduation/Degree','Employed','Drop out','Not reachable','Inactive']
+        },
+        yAxis: {
+			categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+            
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: false
+            }
+        },
+        series: [ {
+            name: 'London',
+            data: [0, 3.2, 4.7, 6.5, 11, 9.6, 8.7,6.7]
+        }]
+    });
+});
