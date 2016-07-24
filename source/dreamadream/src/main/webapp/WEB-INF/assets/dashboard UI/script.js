@@ -378,7 +378,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'Monthly Average Rainfall'
+            text: 'Tracking Status, Career Connect				'
         },
         subtitle: {
             text: 'Source: WorldClimate.com'

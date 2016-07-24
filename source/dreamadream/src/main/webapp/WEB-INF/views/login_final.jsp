@@ -5,7 +5,8 @@
     <title>Dream A Dream</title>
     
     
-    <link rel="stylesheet" type="text/css" href="http://localhost:8080/dreamadream/resources/css/style.css"/>
+    <!-- <link rel="stylesheet" type="text/css" href="http://ec2-54-169-233-60.ap-southeast-1.compute.amazonaws.com:8080/dreamadream/resources/css/style.css"/> -->
+    <link rel="stylesheet" type="text/css" href="/dreamadream/resources/css/style.css"/>
     
 
     <link rel='stylesheet prefetch' href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900|RobotoDraft:400,100,300,500,700,900'>
@@ -55,7 +56,7 @@
 </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-        <script src="http://localhost:8080/dreamadream/resources/js/index.js"></script>
+        <script src="/dreamadream/resources/js/index.js"></script>
 
     
     

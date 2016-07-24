@@ -112,6 +112,7 @@ public class LevelController {
 	
 	*/
 	
+
 	@RequestMapping(value = "/get-charts-test", method = RequestMethod.GET)		
 	public @ResponseBody String getCharts(){
 	
@@ -196,8 +197,8 @@ public class LevelController {
 		
 	}
 	
-	@RequestMapping(value = "/get-chart1", method = RequestMethod.GET	)
-	public void getChartTest(){
+	@RequestMapping(value = "/get-chart1", method = RequestMethod.GET)
+	public void getChart1(){
 	
 		//System.out.println(levelService.getLevel("102"));
 		
@@ -261,7 +262,7 @@ public class LevelController {
 		
 		return ;
 	}
-	
+	*/
 		
 		
 	
