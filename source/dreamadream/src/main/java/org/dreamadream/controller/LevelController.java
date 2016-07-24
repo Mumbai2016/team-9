@@ -143,11 +143,18 @@ public class LevelController {
 		chart1.add("290");	
 		
 		
-		chart3.add("");
-		chart3.add("");
-		chart3.add("");
-		chart3.add("");
-		chart3.add("");
+		chart3.add("ABCD");
+		chart3.add("23");
+		chart3.add("OPED");
+		chart3.add("	13");
+		chart3.add("ASD");
+		chart3.add("19");
+		chart3.add("ASD");
+		chart3.add("43");
+		chart3.add("ASD");
+		chart3.add("10");
+		chart3.add("20");
+		chart3.add("13");
 		
 		chart4.add("");
 		chart4.add("");
